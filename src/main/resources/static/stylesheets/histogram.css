@@ -1,0 +1,59 @@
+.section {
+	display: flex;
+	flex-direction: row;
+}
+.lowerBound,
+.histogramDiv,
+.newGradeDiv {
+	padding: 15px;
+	background-color: #eaeff1;
+	width: 300px;
+}
+.newGradeDiv {
+	margin-top: 20px;
+	height: 285px;
+}
+.lowerBound {
+	margin-right: 20px;
+}
+.lowerTitle,
+.histogramTitle {
+	color: #a62824;
+	font-size: 1rem;
+	margin: 0;
+}
+.form {
+	margin-top: 30px;
+}
+.form input {
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+.newGradeDiv label {
+	display: inline-block;
+	width: auto;
+}
+.newGradeDiv input {
+	width: 150px;
+	margin: 5px;
+	padding: 5px;
+	text-align: left;
+}
+label {
+	display: inline-block;
+	width: 120px;
+}
+input {
+	width: 60px;
+	margin: 10px;
+	padding: 10px;
+	text-align: right;
+}
+.scoreDiv {
+	width: 100%;
+}
+.score {
+	display: inline-block;
+	width: 100px;
+	margin: 8px;
+}

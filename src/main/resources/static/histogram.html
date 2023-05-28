@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="stylesheets/histogram.css" />
+	</head>
+	<body>
+		<h1>Histogram Generator</h1>
+    <section class="section">
+      <div class="lowerBound">
+        <h3 class="lowerTitle">Lower bounds</h3>
+        <form action="submit" class="form" id="formBound">
+          <div>
+            <label for="">Max</label>
+            <input type="number" name="max" value="100.00" onchange="checkBound(this, 0)">
+          </div>
+          <div>
+            <label for="">A+</label>
+            <input type="number" name="A+" value="95.00" onchange="checkBound(this, 1)" > 
+          </div>
+          <div>
+            <label for="">A</label>
+            <input type="number" name="A" value="90.00" onchange="checkBound(this, 2)" > 
+          </div>
+          <div>
+            <label for="">A-</label>
+            <input type="number" name="A-" value="85.00" onchange="checkBound(this, 3)" > 
+          </div>
+          <div>
+            <label for="">B+</label>
+            <input type="number" name="B+" value="80.00" onchange="checkBound(this, 4)" > 
+          </div>
+          <div>
+            <label for="">B</label>
+            <input type="number" name="B" value="75.00" onchange="checkBound(this, 5)" > 
+          </div>
+          <div>
+            <label for="">B-</label>
+            <input type="number" name="B-" value="70.00" onchange="checkBound(this, 6)" > 
+          </div>
+          <div>
+            <label for="">C+</label>
+            <input type="number" name="C+" value="65.00" onchange="checkBound(this, 7)" > 
+          </div>
+          <div>
+            <label for="">C</label>
+            <input type="number" name="C" value="60.00" onchange="checkBound(this, 8)" > 
+          </div>
+          <div>
+            <label for="">C-</label>
+            <input type="number" name="C-" value="55.00" onchange="checkBound(this, 9)" > 
+          </div>
+          <div>
+            <label for="">D</label>
+            <input type="number" name="D" value="50.00" onchange="checkBound(this, 10)" > 
+          </div>
+          <div>
+            <label for="">F</label>
+            <input type="number" name="F" value="0.00" onchange="checkBound(this, 11)" > 
+           </div>
+        </form>
+      </div>
+      <div class="histogram">
+        <div class="histogramDiv">
+          <h3 class="histogramTitle">Histogram</h3>
+          <div class="scoreDiv form" >
+            <p class="score">A+</p>
+            <span class="A+"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">A</p>
+            <span class="A"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">A-</p>
+            <span class="A-"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">B+</p>
+            <span class="B+"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">B</p>
+            <span class="B"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">B-</p>
+            <span class="B-"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">C+</p>
+            <span class="C+"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">C</p>
+            <span class="C"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">C-</p>
+            <span class="C-"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">D</p>
+            <span class="D"></span>
+          </div>
+          <div class="scoreDiv" >
+            <p class="score">F</p>
+            <span class="F"></span>
+          </div>
+        </div>
+        <div class="newGradeDiv">
+          <label for="newGrade">New Grade: </label>
+          <input type="number" id="newgrade">
+        </div>
+      </div>
+    </section>
+  <body />
+  <script src="js/calculate.js"></script>
+</html>
+      
