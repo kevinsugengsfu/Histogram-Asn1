@@ -93,7 +93,7 @@ const updateHistogram = () => {
 const displayHistogram = (num) => {
 	for (let i = 0; i < 12; i++) {
 		if (num < initialBound[i - 1] && num >= initialBound[i]) {
-			document.getElementsByClassName(displayArr[i - 1])[0].innerHTML += "O";
+			document.getElementsByClassName(displayArr[i - 1])[0].innerHTML += "웃";
 		}
 	}
 };
