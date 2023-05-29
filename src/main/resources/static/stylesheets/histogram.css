@@ -1,6 +1,14 @@
+body {
+	font-family: "Times New Roman", Times, serif;
+}
 .section {
 	display: flex;
 	flex-direction: row;
+}
+.h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 25px;
 }
 .lowerBound,
 .histogramDiv,
@@ -8,6 +16,8 @@
 	padding: 15px;
 	background-color: #eaeff1;
 	width: 300px;
+	border-radius: 3px;
+	border: 1px solid #e1e9ec;
 }
 .newGradeDiv {
 	margin-top: 20px;
@@ -24,6 +34,7 @@
 }
 .form {
 	margin-top: 30px;
+	padding-left: 20px;
 }
 .form input {
 	border: 1px solid gray;
@@ -48,6 +59,10 @@ input {
 	margin: 10px;
 	padding: 10px;
 	text-align: right;
+}
+.scoreDivForm {
+	padding-left: 20px;
+	margin-top: 40px;
 }
 .scoreDiv {
 	width: 100%;
